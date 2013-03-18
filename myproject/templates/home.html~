@@ -1,0 +1,99 @@
+<!-- Presentation Home -->
+
+<!DOCTYPE html>
+
+    <head>
+        <!-- MUST INCLUDE THIS FOR JQUERY AND AJAX-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "{{STATIC_URL}}css/pres.css" />
+        <link rel = "shortcut icon" type = "image/x-icon" href = "{{STATIC_URL}}imgs/fav.ico">
+        <title>TTT Presentation</title>
+        
+    </head>
+    
+    <script type="text/javascript">
+        
+        function seePics() {
+            $('.container').append("</br><center><div class='prezi-player'><style type='text/css' media='screen'>.prezi-player { width: 550px; } .prezi-player-links { text-align: center; }</style><object id='prezi_rrnefwqx7d2u' name='prezi_rrnefwqx7d2u' classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width='550' height='400'><param name='movie' value='http://prezi.com/bin/preziloader.swf'/><param name='allowfullscreen' value='true'/><param name='allowFullScreenInteractive' value='true'/><param name='allowscriptaccess' value='always'/><param name='bgcolor' value='#ffffff'/><param name='flashvars' value='prezi_id=rrnefwqx7d2u&amp;lock_to_path=1&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0'/><embed id='preziEmbed_rrnefwqx7d2u' name='preziEmbed_rrnefwqx7d2u' src='http://prezi.com/bin/preziloader.swf' type='application/x-shockwave-flash' allowfullscreen='true' allowFullScreenInteractive='true' allowscriptaccess='always' width='550' height='400' bgcolor='#ffffff' flashvars='prezi_id=rrnefwqx7d2u&amp;lock_to_path=1&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0'></embed></object><div class='prezi-player-links'><p><a title='Python To Legacy Code' href='http://prezi.com/rrnefwqx7d2u/python-to-legacy-code/'>Python To Legacy Code</a> on <a href='http://prezi.com'>Prezi</a></p></div></div></center>");
+            $('.showP').css({"margin:": "10px auto 0px auto"});
+            $('.showP').hide();
+        }
+        
+    </script>
+
+    <body style = "background-image: url('{{STATIC_URL}}imgs/bg.jpg');">
+        
+        <center>
+          
+	   <div class = 'containerTop'>
+                <img src = '{{STATIC_URL}}imgs/ntttLogo.jpg' style = 'float: left; width: 250px;'>
+                <img src = '{{STATIC_URL}}imgs/nT101.jpg' style = 'height: 163px; float: right;width: 340px;'>
+                <div style = 'position: relative;float: left;top:; border:; width: 200px;'>
+                    <img src = '{{STATIC_URL}}imgs/nbirds1.png' style = 'margin: 15px auto 0px auto; width: 180px; '>
+                    <img src = '{{STATIC_URL}}imgs/nbirds2.png' style = 'margin: -15px auto; width: 150px;'>
+                </div>
+            </div>
+
+            <div class = 'container'>
+                
+                <div class = 'navBox'>
+                    
+                    <a href = "http://www.taiwantechtrek.com/legacy/">
+                        <div class = 'navTab' style = "background-image: url('{{STATIC_URL}}imgs/blueTab.png');">
+                            Legacy
+                        </div>
+                    </a>
+                    
+                </div>
+                
+                <div class = 'infoBox'>
+                    
+                    <div class = "leftInfo">
+                        <img src = "{{STATIC_URL}}imgs/sign.jpg">
+                    </div>
+                    
+                    <div class = "rightInfo">
+                         
+                        <div class = "aboutMe" style = "background-image: url('{{STATIC_URL}}imgs/me.png');">
+                            
+                            <center><u><b>Jonathan Chen</b></u></center>
+                            </br><b>Major:</b> Computer Science and Finance</br>
+                            </br><b>School:</b> University of Maryland, College Park</br>
+                            </br><b>Year:</b> Undergraduate Rising Junior</br>
+                            </br><b>Host:</b> National Center For High Performance Computing, Hsinchu Headquarters</br>
+                            </br><b>TTT Group:</b> Three <span style = "float: right"><b>TTT ID:</b> 0307</span></br>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class = 'picBox'>
+                    
+                    <div class = "leftInfo">
+                        <img src = "{{STATIC_URL}}imgs/with_interns.jpg">
+                    </div>
+                    
+                    <div class = "rightInfo">
+                        <img src = "{{STATIC_URL}}imgs/with_boss.jpg">
+                    </div>
+                    
+                </div>
+                
+                <hr/>
+
+                <div class = 'showP' type = "button" onclick="seePics();">
+                    Press Me
+                </div>
+                
+            </div>
+            
+            Taiwan Tech Trek Final Presentation - Summer 2012 By: Jonathan ChaoChin Chen
+            
+        </center>
+        
+    </body>
+
+</html>
